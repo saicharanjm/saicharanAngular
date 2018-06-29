@@ -1,0 +1,29 @@
+
+
+
+<form (submit)="Submit();">
+<div>
+
+
+	<img [src]="url" height="200"> <br/>
+<input type='file' (change)="onSelectFile($event)">
+</div>
+
+<div>
+  <img src="public/img/{{item.image}}" />
+<img [src]="'public/img/'+item.image" />
+  </div>
+   <div>
+ <a href="#" title="Love it" class="btn btn-counter multiple-count" data-count="0"><span>&#x2764;</span></a>
+
+  <button class="btn-secondary like-review">
+    <i class="fa fa-heart" aria-hidden="true"></i> Like
+  </button></div>
+ <div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+<div>
+ <input type="submit" class="btn btn-primary" value="submit">
+</div>
+</form>
